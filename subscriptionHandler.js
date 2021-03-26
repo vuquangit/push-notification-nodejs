@@ -40,6 +40,7 @@ function sendPushNotification(req, res) {
         image: '/logo.png',
         tag: 'new-punch',
         url: '/',
+        shouldRequireInteraction: true
       })
     )
     .catch((err) => {
